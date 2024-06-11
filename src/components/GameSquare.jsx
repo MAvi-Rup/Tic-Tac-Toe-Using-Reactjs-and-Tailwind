@@ -1,7 +1,7 @@
-const GameSquare = () => {
+const GameSquare = ({value,onSquareClick}) => {
   return (
-    <div className="bg-white border border-gray-400 h-12 w-12 m-1 leading-9 text-lg">
-      X
+    <div className=" text-center align-middle bg-white border border-gray-400 h-12 w-12  text-4xl" onClick={onSquareClick}>
+      {value}
     </div>
   );
 };
